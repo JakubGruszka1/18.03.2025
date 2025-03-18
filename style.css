@@ -67,6 +67,10 @@ header ul li button:focus {
     transition: 0.6s;
 }
 
+header ul li button:hover {
+    cursor: pointer;
+}
+
 header ul {
     height: 100%;
     display: flex;
@@ -86,9 +90,12 @@ header ul {
     width: 100%;
     height: 100%;
     background: conic-gradient(
-        rgb(205, 0, 175) 0% 34%,
-        rgb(205, 0, 145) 34% 70%,
-        rgb(205, 0, 105) 70% 100%
+        rgb(255, 255, 255) 0% 0.5%,
+        rgb(205, 0, 175) 0.5% 33%,
+        rgb(255, 255, 255) 33% 33.5%,
+        rgb(205, 0, 145) 33.5% 70%,
+        rgb(255, 255, 255) 70% 70.5%,
+        rgb(205, 0, 105) 70.5% 100%
     );
     clip-path: circle(50% at 50% 50%);
 }
@@ -108,6 +115,10 @@ header ul {
     align-items: center;
 }
 
+li {
+    list-style-type: none;
+}
+
 .dot h1 {
     color: black;
     font-size: 36px;
@@ -125,5 +136,30 @@ header ul {
     border-radius: 30px;
     width: 20%;
     height: 40%;
+    box-shadow: 1px 1px 8px 1px rgb(185, 185, 185);
 }
 
+.circlechart ul li {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#circleColor1 {
+    background-color: rgb(205, 0, 175);
+}
+
+#circleColor2 {
+    background-color: rgb(205, 0, 145);
+}
+
+#circleColor3 {
+    background-color: rgb(205, 0, 105);
+}
+
+.circleColor {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
