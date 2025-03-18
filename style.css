@@ -1,38 +1,133 @@
-*{
-    color: rgb(222, 222, 222);
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(240, 240, 240);
-    width: 99vw;
-    height: 100vh;
+body {
+    width: 100vw;
+    height: 100vw;
     display: flex;
+    overflow-x: hidden;
 }
 
-header{
-    background-color: rgb(51, 51, 51);
+header {
     width: 20%;
-    height: 100%;
+    height: 80%;
 }
 
-main{
+main {
     width: 80%;
-    height: 100%;
+    height: 80%;
+    background-color: rgb(240, 240, 240);
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
 }
 
-.main * {
-    color: black;
+.main {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    gap: 10px;
+    flex-wrap: wrap;
+    
 }
 
-.main{
+.top {
+    width: 100%;
+    height: 20%;
+}
+
+.main>.circle-block {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+
+.main>.circle-block1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.main>.long-block {
+    background-color: white;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 5;
+}
+
+.main>.height-block {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    background-color: white;
+}
+
+.main>.long-block-two {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    background-color: white;
+}
+
+.main>.long-block-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: white;
+}
+
+.main>.circle-block-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: white;
+}
+
+.main>.circle-block-three {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-end: 3;
+    background-color: white;
+}
+
+.circle-block,
+.circle-block1 {
+    background-color: white;
+}
+
+.content-circle-block {
+    width: 95%;
+}
+
+.content-long-block {
     width: 100%;
     height: 100%;
 }
 
-* {
+
+
+
+header * {
     color: rgb(222, 222, 222);
+}
+
+header{
+    position: fixed;
+    background-color: rgb(51, 51, 51);
+    width: 20%;
+    height: 100%;
 }
 
 header ul li {
@@ -90,12 +185,12 @@ header ul {
     width: 100%;
     height: 100%;
     background: conic-gradient(
-        rgb(255, 255, 255) 0% 0.5%,
-        rgb(205, 0, 175) 0.5% 33%,
-        rgb(255, 255, 255) 33% 33.5%,
-        rgb(205, 0, 145) 33.5% 70%,
-        rgb(255, 255, 255) 70% 70.5%,
-        rgb(205, 0, 105) 70.5% 100%
+        rgb(255, 255, 255) 0% 0.2%,
+        rgb(205, 0, 175) 0.2% 33%,
+        rgb(255, 255, 255) 33% 33.2%,
+        rgb(205, 0, 145) 33.2% 70%,
+        rgb(255, 255, 255) 70% 70.2%,
+        rgb(205, 0, 105) 70.2% 100%
     );
     clip-path: circle(50% at 50% 50%);
 }
@@ -126,6 +221,7 @@ li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .circlechart {
     background-color: rgb(236, 236, 236);
     display: flex;
@@ -134,7 +230,7 @@ li {
     flex-direction: column;
     margin: 10px;
     border-radius: 30px;
-    width: 20%;
+    width: 100%;
     height: 40%;
     box-shadow: 1px 1px 8px 1px rgb(185, 185, 185);
 }
@@ -162,4 +258,89 @@ li {
     border-radius: 100%;
     width: 10px;
     height: 10px;
+}
+
+.layerchart {
+    width: 500px;
+    height: 378px;
+    margin-top: 10px;
+    padding-left: 3%;
+    border-radius: 30px;
+    border: 1px black solid;
+}
+
+.layerchart .layer {
+    width: 500px;
+    height: 300px;
+    bottom: 15.5%;
+}
+
+.layerchart ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.layerchart ul li hr {
+    position: absolute;
+    height: 210px;
+    bottom: 100px;
+    top: 10.5%;
+}
+
+.hr1 {
+    left: 38.35%;
+}
+
+.hr2 {
+    left: 47.35%;
+}
+
+.hr3 {
+    left: 55.8%;
+}
+
+.hr4 {
+    left: 64.5%;
+}
+
+.info2 {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+}
+
+.info2 * {
+    
+}
+
+.layer1 {
+    width: 100%;
+    height: 100%;
+    margin-left: -14px;
+    background-color: black;
+    clip-path: polygon(34% 77%, 67% 48%, 100% 65%, 100% 100%, 0 100%, 0 73%);
+    background-color: rgba(205, 0, 105, 0.1);
+}
+
+.layer2 {
+    width: 26.15%;
+    height: 26.1%;
+    background-color: black;
+    clip-path: polygon(34% 49%, 67% 63%, 100% 43%, 100% 100%, 0 100%, 0 38%);
+    background-color: rgba(151, 0, 78, 0.2);
+    position: absolute;
+    top: 6.7%;
+    right: 35.5%;
+}
+
+.info {
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Yr {
+    display: flex;
+    justify-content: center;
 }
