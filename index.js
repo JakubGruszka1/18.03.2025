@@ -48,13 +48,12 @@
         Mleko: 190,
         Kurczak: 69
     }
-    sumavals2 = vals2.Maka + vals2.Jajka + vals2.Cukier + vals2.Mleko + vals2.Kurczak //1300
 
-    col1.style.height = (vals2.Maka /sumavals2) * 100 + "%";
-    col2.style.height = (vals2.Jajka /sumavals2) * 100 + "%";
-    col3.style.height = (vals2.Cukier /sumavals2) * 100 + "%";
-    col4.style.height = (vals2.Mleko /sumavals2) * 100 + "%";
-    col5.style.height = (vals2.Kurczak /sumavals2) * 100 + "%";
+    col1.style.height = (vals2.Maka /1000) * 100 + "%";
+    col2.style.height = (vals2.Jajka /1000) * 100 + "%";
+    col3.style.height = (vals2.Cukier /1000) * 100 + "%";
+    col4.style.height = (vals2.Mleko /1000) * 100 + "%";
+    col5.style.height = (vals2.Kurczak /1000) * 100 + "%";
 
     col1.innerText = `${vals2.Maka}kg`
     col2.innerText = `${vals2.Jajka}kg`
@@ -81,14 +80,12 @@
         Salatkaztunczykiem: 22
 
     }
-    //108
-    sumavals3 = vals3.Kurczakgrill + vals3.Tofustirfry + vals3.Jajecznica + vals3.Gulaszwolowy + vals3.Salatkaztunczykiem;
 
-    col1.style.width = (vals3.Kurczakgrill / sumavals3) * 100 + "%";
-    col2.style.width = (vals3.Tofustirfry / sumavals3) * 100 + "%";
-    col3.style.width = (vals3.Jajecznica / sumavals3) * 100 + "%";
-    col4.style.width = (vals3.Gulaszwolowy / sumavals3) * 100 + "%";
-    col5.style.width = (vals3.Salatkaztunczykiem / sumavals3) * 100 + "%";
+    col1.style.width = (vals3.Kurczakgrill / 35) * 100 + "%";
+    col2.style.width = (vals3.Tofustirfry / 35) * 100 + "%";
+    col3.style.width = (vals3.Jajecznica / 35) * 100 + "%";
+    col4.style.width = (vals3.Gulaszwolowy / 35) * 100 + "%";
+    col5.style.width = (vals3.Salatkaztunczykiem / 35) * 100 + "%";
 
     col1.innerText = `${vals3.Kurczakgrill}g`;
     col2.innerText = `${vals3.Tofustirfry}g`;
