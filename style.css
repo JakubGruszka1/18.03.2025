@@ -166,7 +166,7 @@ li {
     width: 10px;
     height: 10px;
 }
-.columnChart{
+.columnChart1{
     display: flex;
     flex-direction: column;
     height: 40%;
@@ -187,41 +187,41 @@ li {
     background: rgb(34,195,147);
     background: linear-gradient(169deg, rgba(34,195,147,1) 0%, rgba(45,220,253,1) 100%);
 }
-.divider{
+.columnChart1 .divider{
     height: 100%;
     width: 2%;
     background-color: rgb(236, 236, 236);
     clear: both;
 }
-.columnLimiter{
+.columnChart1 .chart .columnLimiter{
     width: 9.4%;
     background-color: rgb(236, 236, 236);
 }
-#col1{
+.columnChart1 #col1{
     height: 0%;
 }
-#col2{
+.columnChart1 #col2{
     height: 50%;
 }
-#col3{
+.columnChart1 #col3{
     height: 15%;
 }
-#col4{
+.columnChart1 #col4{
     height: 20%;
 }
-#col5{
+.columnChart1 #col5{
     height: 70%;
 }
-#col6{
+.columnChart1 #col6{
     height: 25%;
 }
-#col7{
+.columnChart1 #col7{
     height: 0%;
 }
-#col8{
+.columnChart1 #col8{
     height: 35%;
 }
-#col9{
+.columnChart1 #col9{
     height: 80%;
 }
 .dane{
@@ -237,4 +237,60 @@ li {
     list-style: none;
     justify-content: space-around;
     width: 100%;
+}
+.columnChart2{
+    height: 700px;
+    width: 30%;
+}
+.columnChart2 .chart{
+    background: rgb(195,109,34);
+    background: linear-gradient(169deg, rgba(195,109,34,1) 23%, rgba(204,36,93,1) 59%, rgba(253,45,45,1) 100%);
+    height: 90%;
+    width: 70%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.columnChart2 .chart .divider{
+    height: 2.1%;
+    width: 100%;
+    background-color: white;
+}
+.columnChart2 .columnLimiter{
+    height: 7.4%;
+    width: 2%;
+    background-color: white;
+}
+#col1-2{
+    width: 90%;
+}
+#col2-2{
+    width: 50%;
+}
+#col3-2{
+    width: 70%;
+}
+#col4-2{
+    width: 55%;
+}
+#col5-2{
+    width: 95%;
+}
+#col6-2{
+    width: 30%;
+}
+#col7-2{
+    width: 35%;
+}
+#col8-2{
+    width: 45%;
+}
+#col9-2{
+    width: 30%;
+}
+#col10-2{
+    width: 25%;
+}
+#col11-2{
+    width: 60%;
 }
