@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,32 +34,95 @@
         <section class="main">
             <div class="circle-block">
                 <div class="content-circle-block">
-                    <h2>Host Instance</h2>
+                    <h2>Proceny sprzedarzy posiłków na 2150 dań</h2>
                     <div class="circlechart">
                         <div class="circle">
-                            <div class="slice"></div>
-                            <div class="dot"><h1>3</h1></div>
+                            <div class="slice" id="slice"></div>
+                            <div class="dot">
+                                <h1>3</h1>
+                            </div>
                         </div>
                         <ul>
-                            <li><h2>Dane:</h2></li>
-                            <li><div id="circleColor1" class="circleColor"></div><h2>34%</h2></li>
-                            <li><div id="circleColor2" class="circleColor"></div><h2>36%</h2></li>
-                            <li><div id="circleColor3" class="circleColor"></div><h2>30%</h2></li>
+                            <li>
+                                <h2>Dane:</h2>
+                            </li>
+                            <li>
+                                <div id="circleColor1" class="circleColor"></div>
+                                <h2 id="t1">Sniadania</h2>
+                            </li>
+                            <li>
+                                <div id="circleColor2" class="circleColor"></div>
+                                <h2 id="t2">Obiady</h2>
+                            </li>
+                            <li>
+                                <div id="circleColor3" class="circleColor"></div>
+                                <h2 id="t3">Kolacje</h2>
+                            </li>
+                            <li>
+                                <div id="circleColor4" class="circleColor"></div>
+                                <h2 id="t4">Przekąski</h2>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="circle-block1">
-                <h2>Receive Location</h2>
+                <h2>Ilość klientów w ostatnim miesiącu</h2>
+                <div class="">
+
+                </div>
             </div>
 
             <div class="long-block">
-                <h2>Suspended Service Instances</h2>
-                <h3>Grouped by Instance Status</h3>
+                <h2>Ilość białka w daniach</h2>
+                <div class="columnChart2">
+                    <div class="dane2">
+                        <ul>
+                            <li style="margin-top: 15px; text-align: end;">Kurczak z grila</li>
+                            <li style="margin-top: 50px; text-align: end;">Tofu stir fry</li>
+                            <li style="margin-top: 50px; text-align: end;">Jajecznica</li>
+                            <li style="margin-top: 50px; text-align: end;">Gulasz wołowy</li>
+                            <li style="margin-top: 50px; text-align: end;">Sałatka z tuńczykiem</li>
+                        </ul>
+                    </div>
+                    <div class="chart2">
+                        <div class="" id="col1-2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col2-2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col3-2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col4-2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col5-2"></div>
+                    </div>
+                </div>
             </div>
             <div class="height-block">
-                <div class="content-height-block">
-                    <h2>Alarms</h2>
+                <h2>Najczęściej uzywane produkty w ostatnim miesiącu</h2>
+                <div class="columnChart1">
+                    <div class="chart">
+                        <div class="" id="col1"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col3"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col4"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col5"></div>
+                        <div class="divider"></div>
+
+                    </div>
+                    <div class="dane">
+                        <ul>
+                            <li>Maka</li>
+                            <li>Jajka</li>
+                            <li>Cukier</li>
+                            <li>Mleko</li>
+                            <li>Kurczak</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="long-block-two">
@@ -85,6 +149,7 @@
         </section>
     </main>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
