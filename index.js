@@ -67,7 +67,6 @@ let globalinfo = {
     "Najpopularniejszy napój": "Woda z cytryną",
     "Promocja dnia": -20
 }
-
 let sumavals1 = vals1.Sniadanie + vals1.Obiad + vals1.Kolacja + vals1.Przekaski;
 let sn = vals1.Sniadanie / sumavals1 * 100;
 let ob = vals1.Obiad / sumavals1 * 100;
